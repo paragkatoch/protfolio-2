@@ -1,15 +1,15 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-	name: "Gordon Jakubson",
+	name: "PreIdioit",
 	description: [
 		"Frontend Developer",
 		"VsCode + Adobe Xd",
-		"Available for freelance",
+		"Available for freelance, call me!!",
 	],
 	socialUrl: [
 		{
 			name: "Twitter",
-			url: "https://twitter.com/osenorth",
+			url: "https://twitter.com/preIdiot",
 		},
 		{
 			name: "Instagram",
@@ -23,14 +23,14 @@ export default {
 
 	projects: [
 		{
-			heading: "Drift City - Community website",
-			techStack: ["Sass", "NextJs"],
+			heading: "PreIdiot Portfolio - Community website",
+			techStack: ["Sass", "NextJs","Figma"],
 			images: [
 				"/images/girl-vr.png",
 				"/images/girl-laptop.png",
 				"/images/boy-work.png",
 			],
-			url: "https://www.osenorth.co",
+			url: "https://www.preIdiot-folio.vercel.app",
 		},
 		{
 			heading: "Airsoft - An Advertising Agency",
@@ -81,8 +81,8 @@ export default {
 		name: "Experiments",
 		contents: [
 			{
-				heading: "Xteria - Landing Page",
-				url: "https://www.osenorth.co",
+				heading: "My Portfolio",
+				url: "https://preIdiotFolio.vercel.app",
 			},
 			{
 				heading: "Drew Portfolio",
@@ -104,7 +104,7 @@ export default {
 	},
 
 	contact: {
-		heading: "Say Hello",
-		email: "gordonjakubson@gmail.com",
+		heading: "Let's talk",
+		email: "myemail@gmail.com",
 	},
 };
