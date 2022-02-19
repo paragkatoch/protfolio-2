@@ -26,6 +26,7 @@ export default {
 			heading: "PreIdiot Portfolio - Community website",
 			techStack: ["Sass", "NextJs","Figma"],
 			images: [
+				"/images/osenorth.png",
 				"/images/girl-vr.png",
 				"/images/girl-laptop.png",
 				"/images/boy-work.png",
