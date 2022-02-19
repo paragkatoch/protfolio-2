@@ -1,0 +1,78 @@
+@use "../../styles/abstract/" as *;
+
+@include mobile {
+	.project {
+		--tech-stack-vp: 0.75rem;
+		--images-height: 190px;
+		--images-width: 270px;
+
+		.header {
+			.tech_stack {
+				@include flex-center-sb;
+				padding: var(--tech-stack-vp) var(--padding-corner);
+
+				p {
+					font: var(--paragraph-300);
+				}
+				> p {
+					color: var(--text-color-secondary);
+				}
+
+				.stack {
+					display: grid;
+					grid-auto-flow: column;
+					width: fit-content;
+					column-gap: 1.5rem;
+
+					p {
+						color: var(--text-color-primary);
+					}
+				}
+			}
+		}
+		.images {
+			height: var(--images-height);
+			overflow-y: hidden;
+			border-top: 1px solid var(--border-color);
+
+			> .container {
+				max-width: fit-content;
+
+				display: grid;
+				grid-auto-flow: column;
+				column-gap: 0.5rem;
+
+				overflow-x: scroll;
+				overflow-y: hidden;
+
+				scroll-snap-type: both mandatory;
+				scroll-padding: 1rem;
+
+				.active {
+					scroll-snap-type: unset;
+				}
+
+				li {
+					position: relative;
+					display: inline-block;
+					scroll-snap-align: center;
+
+					width: var(--images-width);
+					height: var(--images-height);
+				}
+			}
+		}
+	}
+}
+
+@include tablet {
+	.project {
+		--images-height: 360px;
+		--images-width: 600px;
+	}
+}
+@include desktopSmall {
+	.project {
+		--tech-stack-vp: 1.125rem;
+	}
+}

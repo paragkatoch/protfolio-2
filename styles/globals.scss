@@ -1,0 +1,61 @@
+@use "./abstract" as *;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+	font-family: "Source Sans Pro", sans-serif;
+
+	background-color: var(--bg-color);
+	scroll-behavior: smooth;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+:root {
+	--bg-color: #111111;
+	--border-color: #242424;
+	--text-color-primary: #f7f7f7;
+	--text-color-secondary: #888888;
+}
+
+@include mobile {
+	:root {
+		--heading-300: normal 300 1rem/150% "Source Sans Pro";
+		--heading-small-300: normal 300 1rem/125% "Source Sans Pro";
+		--heading-large-300: normal 300 1rem/112.5% "Source Sans Pro";
+		--paragraph-300: normal 300 0.75rem/150% "Source Sans Pro";
+
+		--padding-corner: 35px;
+	}
+}
+
+@include tablet {
+	:root {
+		--heading-300: normal 300 1.5rem/150% "Source Sans Pro";
+		--paragraph-300: normal 300 1rem/125% "Source Sans Pro";
+		--heading-large-300: normal 300 1.5rem/150% "Source Sans Pro";
+
+		--padding-corner: 70px;
+	}
+}
+
+@include desktopSmall {
+	:root {
+		--heading-300: normal 300 2rem/150% "Source Sans Pro";
+		--heading-large-300: normal 300 2rem/150% "Source Sans Pro";
+	}
+}

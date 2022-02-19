@@ -1,0 +1,53 @@
+@use "../../styles/abstract/" as *;
+
+@include mobile {
+	.project_info {
+		--project-vp: 1rem;
+		--arrow-image-size: 16px;
+
+		display: block;
+
+		background-color: transparent;
+		will-change: transition;
+		transition: background-color 0.35s;
+
+		padding: var(--project-vp) 0;
+		border-top: 1px solid var(--border-color);
+		border-bottom: 1px solid var(--border-color);
+
+		.title {
+			padding: 0 var(--padding-corner);
+			@include flex-center-sb;
+
+			p {
+				font: var(--heading-300);
+				color: var(--text-color-primary);
+			}
+
+			.arrowImage {
+				transition: transform 0.35s ease-out;
+				width: var(--arrow-image-size);
+				height: var(--arrow-image-size);
+			}
+		}
+
+		&:hover {
+			background-color: #191919;
+			.arrowImage {
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+@include tablet {
+	.project_info {
+		--arrow-image-size: 24px;
+	}
+}
+@include desktopSmall {
+	.project_info {
+		--arrow-image-size: 40px;
+		--project-vp: 1.5rem;
+	}
+}

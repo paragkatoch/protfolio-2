@@ -1,0 +1,13 @@
+@use "../../styles/abstract/" as *;
+
+@include mobile {
+	.experiments {
+		padding-top: 80px;
+
+		h2 {
+			padding: 0 var(--padding-corner) 40px var(--padding-corner);
+			font: var(--heading-small-300);
+			color: var(--text-color-secondary);
+		}
+	}
+}
